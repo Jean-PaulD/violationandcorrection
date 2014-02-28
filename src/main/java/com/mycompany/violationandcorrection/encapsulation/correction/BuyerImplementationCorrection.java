@@ -2,16 +2,17 @@
  * To change this template, choose Tools | Templates
  * and open the template in the editor.
  */
-package com.mycompany.violationandcorrection.encapsulation.violation;
+package com.mycompany.violationandcorrection.encapsulation.correction;
 
 /**
  *
  * @author Jean-Paul
  */
-public class BuyerImplementationViolation {
+public class BuyerImplementationCorrection{
 
-    public double amount;
-    double getAmount() {
+    
+    private double amount;
+    public double getAmount() {
         return amount;
     }
     
