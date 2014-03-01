@@ -12,7 +12,7 @@ import com.mycompany.violationandcorrection.inheritance.service.Buyer;
  */
 public class BuyerImpl implements Buyer{
     
-    private boolean cancel = false;
+    private boolean cancelYesNO = false;
     private double bid;
     private String itemName = "book1";
     private double price = 12.2;
@@ -21,9 +21,6 @@ public class BuyerImpl implements Buyer{
         return 0.1;
     }
 
-    public boolean cancelBid() {
-        return cancel;
-    }
 
     public String itemName() {
         return itemName;
@@ -38,7 +35,9 @@ public class BuyerImpl implements Buyer{
      }
 
     public boolean cancelBid(boolean cancel) {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
-    }
+       return cancel; }
+
+    public String itemName(String item) {
+    return item;}
 
 }

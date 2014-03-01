@@ -6,15 +6,21 @@ package Tests.com.mycompany.violationandcorrection;
 
 import com.mycompany.violationandcorrection.config.DomainConfig;
 import com.mycompany.violationandcorrection.inheritance.service.Buyer;
+import com.mycompany.violationandcorrection.inheritance.service.Impl.BuyerImpl;
+import com.mycompany.violationandcorrection.inheritance.service.Impl.ItemImpl;
+import com.mycompany.violationandcorrection.inheritance.service.Impl.SellerImpl;
+import com.mycompany.violationandcorrection.inheritance.service.Impl.StudentImpl;
 import com.mycompany.violationandcorrection.inheritance.service.Item;
 import com.mycompany.violationandcorrection.inheritance.service.SellerService;
 import com.mycompany.violationandcorrection.inheritance.service.StudentService;
+import junit.framework.Assert;
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.annotation.AnnotationConfigApplicationContext;
 import org.testng.annotations.AfterClass;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.BeforeMethod;
+import org.testng.annotations.Test;
 
 /**
  *
@@ -46,15 +52,30 @@ public class violationandcorrectionTest {
         
     }
 
-   // @Test
- //   public static void buyerImplTest() throws Exception{
-  //      assertNull(new BuyerImpl().itemName(), "This should not be null");
-  //      //assertEquals(new BuyerImpl().)
-   //     assertTrue(new BuyerImpl().cancelBid(), "This should be true");
- //   }
+    @Test
+    public static void buyerTest() throws Exception{
+      Assert.assertNull("This should not be null", new BuyerImpl().itemName());
+       //assertEquals(new BuyerImpl().)
+      Assert.assertTrue( "This should be true", new BuyerImpl().cancelBid(true));
+      
+   }
     
-    
-    @AfterClass
+   @Test
+   public void studentTest() throws  Exception{
+       Assert.assertNull("some null test", new StudentImpl().itemName("Some item"));
+   }
+   
+   @Test
+   public void itemTest()throws  Exception{
+       Assert.assertEquals("seems legit", 100 , new ItemImpl().price());
+   }
+   
+   @Test
+   public void sellerTest()throws  Exception{
+       Assert.assertEquals("a", 100 , new SellerImpl().bookprice());
+   }
+   
+   @AfterClass
     public static void tearDownClass() throws Exception {
     }
 

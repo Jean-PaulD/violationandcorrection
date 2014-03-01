@@ -11,5 +11,5 @@ package com.mycompany.violationandcorrection.inheritance.service;
 public interface Item {
     double price();
     boolean avilable();
-    String itemName();
+    String itemName(String item);
 }

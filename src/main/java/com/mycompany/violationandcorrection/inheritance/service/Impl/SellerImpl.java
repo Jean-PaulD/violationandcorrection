@@ -6,12 +6,11 @@ package com.mycompany.violationandcorrection.inheritance.service.Impl;
 
 import com.mycompany.violationandcorrection.inheritance.service.SellerService;
 
-
 /**
  *
  * @author Jean-Paul
  */
-public class SellerImpl implements SellerService{
+public class SellerImpl implements SellerService {
 
     public String itemName() {
         throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
@@ -33,6 +32,7 @@ public class SellerImpl implements SellerService{
         throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
     }
 
-    
-    
+    public String itemName(String item) {
+        return item;
+    }
 }

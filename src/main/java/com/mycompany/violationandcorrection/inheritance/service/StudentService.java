@@ -10,6 +10,5 @@ package com.mycompany.violationandcorrection.inheritance.service;
  */
 public interface StudentService extends Item {
     
-    @Override
-    String itemName();
+    String itemName(String item);
 }
