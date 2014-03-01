@@ -8,7 +8,7 @@ package com.mycompany.violationandcorrection.lsp.violation;
  *
  * @author Jean-Paul
  */
-public interface StudentService{
+public interface StudentServiceViolation{
     
     String itemName();
     double bookprice();

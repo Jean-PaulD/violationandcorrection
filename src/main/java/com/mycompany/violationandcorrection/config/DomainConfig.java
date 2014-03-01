@@ -4,6 +4,14 @@
  */
 package com.mycompany.violationandcorrection.config;
 
+import com.mycompany.violationandcorrection.inheritance.service.Buyer;
+import com.mycompany.violationandcorrection.inheritance.service.Impl.BuyerImpl;
+import com.mycompany.violationandcorrection.inheritance.service.Impl.ItemImpl;
+import com.mycompany.violationandcorrection.inheritance.service.Impl.SellerImpl;
+import com.mycompany.violationandcorrection.inheritance.service.Impl.StudentImpl;
+import com.mycompany.violationandcorrection.inheritance.service.Item;
+import com.mycompany.violationandcorrection.inheritance.service.SellerService;
+import com.mycompany.violationandcorrection.inheritance.service.StudentService;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 
@@ -13,9 +21,27 @@ import org.springframework.context.annotation.Configuration;
  */
 @Configuration
 public class DomainConfig {
-   /* @Bean (name = "dipBean")
-    public dipService getService(){
-       return new dipServiceImpl();
-    } */
+    @Bean (name = "Buyer")
+    public Buyer getBuyer(){
+       return new BuyerImpl();
+    } 
+    
+    @Bean (name = "Item")
+    public Item getItem(){
+       return new ItemImpl();
+    } 
+    
+    @Bean (name = "Seller")
+    public SellerService getSeller(){
+       return new SellerImpl();
+    } 
+    
+    @Bean (name = "Student")
+    public StudentService getSTudent(){
+       return new StudentImpl();
+    } 
+    
+    
+    
     
 }

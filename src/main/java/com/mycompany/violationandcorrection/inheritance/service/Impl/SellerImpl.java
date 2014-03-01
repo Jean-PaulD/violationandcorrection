@@ -4,13 +4,14 @@
  */
 package com.mycompany.violationandcorrection.inheritance.service.Impl;
 
-import com.mycompany.violationandcorrection.inheritance.service.StudentService;
+import com.mycompany.violationandcorrection.inheritance.service.SellerService;
+
 
 /**
  *
  * @author Jean-Paul
  */
-public class SellerImpl implements StudentService{
+public class SellerImpl implements SellerService{
 
     public String itemName() {
         throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
@@ -21,6 +22,14 @@ public class SellerImpl implements StudentService{
     }
 
     public boolean avilable() {
+        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+    }
+
+    public String sellProduct() {
+        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+    }
+
+    public double bookprice() {
         throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
     }
 

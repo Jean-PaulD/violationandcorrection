@@ -2,17 +2,17 @@
  * To change this template, choose Tools | Templates
  * and open the template in the editor.
  */
-package com.mycompany.violationandcorrection.lsp.correction;
+package com.mycompany.violationandcorrection.lsp.violation;
 
 /**
  *
  * @author Jean-Paul
  */
-public class SellerImpl implements SellerService {
+public class SellerImplViolation implements StudentServiceViolation {
 
     public String sellProduct() {
         return null;
-       
+        
     }
 
     public String itemName() {
@@ -25,4 +25,13 @@ public class SellerImpl implements SellerService {
         
     }
 
+    public double sellBookPrice() {
+        return 0;
+        
+    }
+
+    public double buyBook() { //seller cannot buy. You can only be a buyer or seller at one time.
+        return 0;
+        
+    }
 }

@@ -8,11 +8,10 @@ package com.mycompany.violationandcorrection.lsp.correction;
  *
  * @author Jean-Paul
  */
-public interface SellerService{
-
-    String sellProduct();
-
+public interface StudentServiceCorrection extends SellerServiceCorrection{
+    
     String itemName();
-
     double bookprice();
+    double sellBookPrice();
+    double buyBook();
 }
