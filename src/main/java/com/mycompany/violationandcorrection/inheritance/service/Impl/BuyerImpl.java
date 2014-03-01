@@ -2,7 +2,7 @@
  * To change this template, choose Tools | Templates
  * and open the template in the editor.
  */
-package com.mycompany.violationandcorrection.encapsulation.Impl;
+package com.mycompany.violationandcorrection.inheritance.service.Impl;
 
 import com.mycompany.violationandcorrection.inheritance.service.Buyer;
 
